@@ -1,0 +1,102 @@
+.expense-summary, .expense-page > div:first-of-type, .expense-edit > div:first-of-type, .expense-list-header { 
+    background: $bkg-white;
+    padding: $m-size; 
+} 
+.expense-summary > div > h2 {
+    font-weight: normal;
+}
+
+.expense-list-header {  
+    font-weight: bold;
+    font-size: $font-size-large;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.expense-item {
+    border: 1px solid darken($color: $bkg-white, $amount: 7%);
+    padding: 0;
+}
+.expense-item strong {
+    display: block;
+    color:#000;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+.expense-item p {
+    border: 1px solid darken($color: $bkg-white, $amount: 7%);
+    margin: 0;
+}
+
+.expense-item .noExpense {
+    font-weight: bold;
+    text-align: center;
+    padding: $s-size 0;
+    font-size: $m-size;
+    text-transform: uppercase;
+}
+
+.expense-item p a {
+    padding: $s-size;
+    display: block;
+    text-decoration: none;
+}
+.expense-item a:hover {
+        background: darken($color: $bkg-white, $amount: 10%);
+    }
+.expense-item p span {
+    word-break: break-all;
+    display: inline-block;
+    width: 33%;
+    vertical-align: text-top;
+    @media (max-width: $desktop-breakpoint) {
+      display: block;
+      margin-bottom: 5px;
+    }
+}
+.expense-item p span:nth-of-type(2) {
+    width: 34%;
+    text-align: center;
+    @media (max-width: $desktop-breakpoint) {
+      display: block;
+      text-align: left;
+    }
+}
+.expense-item p span:last-of-type {
+    text-align: right;
+    font-weight: bold;
+    @media (max-width: $desktop-breakpoint) {
+        text-align: left;
+    }
+}
+.expense-item p:nth-child(odd) {
+    background: darken($color: $white, $amount: 7%);
+}
+.expense-item p:nth-child(even) {
+    background: $white;
+}
+
+/* .expensesFilters { } */
+.expensesFilters > div {
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+    @media (min-width: $desktop-breakpoint) {
+      flex-direction: row;
+    }
+  }
+.expensesFilters > div > div {
+    margin: $m-size 0;
+    @media (min-width: $desktop-breakpoint) { 
+      margin: $s-size 0; 
+    }
+  }
+.expensesFilters > div > div > input, .expensesFilters > div > div > select {
+      border: 1px solid darken($color: $bkg-white, $amount: 7%);
+      height: 50px;
+      padding: $s-size;
+      font-size: $font-size-large;
+ }
+ .expensesFilters > div > div > select {
+     background: $bkg-white;
+}

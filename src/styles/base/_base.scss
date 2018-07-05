@@ -1,0 +1,55 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+  background: $white;
+}
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.is-active {
+  font-weight: bold;
+}
+
+a {
+  color: $off-black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.show-mobile {
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}
+.show-desktop {
+  @media (max-width: $desktop-breakpoint - .01rem) {
+    display: none;
+  }
+}
+
+.loader {
+  align-items: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+.loader img {
+  width: 6rem;
+  height: 6rem;
+}

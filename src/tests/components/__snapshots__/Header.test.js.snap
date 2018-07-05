@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<header
+  className="topSection"
+>
+  <div
+    className="content-container"
+  >
+    <div>
+      <Link
+        replace={false}
+        to="/dashboard"
+      >
+        Boiler Plate
+      </Link>
+      <img
+        alt="logo"
+        className="App-logo"
+        src="/images/logo.svg"
+      />
+      <button
+        onClick={[Function]}
+      >
+        Log out
+      </button>
+    </div>
+  </div>
+</header>
+`;
